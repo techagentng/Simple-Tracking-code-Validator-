@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Inter Freigth Logistics</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/pack-realestate.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/custom-forms-v2.css" rel="stylesheet" type="text/css" />
+		<style>
+			.h{
+				height: 100vh;
+			}
+		</style>
+		<script defer src="main.js"></script>
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+	-->
+	<body class="smoothscroll enable-animation">
+
+
+		<!-- FULLSCREEN MAP -->
+		<div id="map-fullscreen">
+			<button><i class="fa fa-remove"></i> </button>
+			<div id="gmap-init"></div>
+		</div><!-- /FULLSCREEN MAP -->
+
+
+		<!-- 
+			COOKIE ALERT 
+
+				.alert-primary
+				.alert-warning
+				.alert-danger
+				.alert-info
+				.alert-position-bottom		= bottom position
+
+				.cookie-reset 				= tTEST ONLY: when you want to reset the cookie (NEVER USE ON PRODUCTION)
+											  usage: add this class, refresh the page two times and then remove the class
+
+
+		 		data-expire="30"			= expiration in days
+		-->
+		<div id="cookie-alert" data-expire="30" class="alert alert-warning alert-position-bottom">
+			<div class="container">
+
+				<button type="button" class="close" data-dismiss="alert">
+					<span class="cookie-close-btn" aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+
+				<p class="fs-13">
+					<i class="fa fa-warning"></i> 
+					We use cookies to provide you with a better service. 
+					Carry on browsing if you're happy with this, or find out how to 
+					<a href="#">manage cookies</a>.
+				</p>
+
+			</div>
+		</div>
+		<!-- /COOKIE ALERT -->
+
+
+
+		<!-- wrapper -->
+		<div id="wrapper" style="width:100vw; height=100vh>
+
+			<!-- Top Bar -->
+			<div id="topBar">
+				<div class="container">
+
+					
+					
+
+				</div>
+			</div>
+			<!-- /Top Bar -->
+
+
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+			-->
+			<div id="header" class="navbar-toggleable-md clearfix header-sm sticky disable-uppercase">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+
+
+						<!-- Logo -->
+						<a class="logo float-left" href="pack-realestate-home-1.html">
+							<img src="demo_files/images/packs/realestate/logo.png" alt="" />
+						</a>
+
+
+
+						<!-- 
+							Top Nav 
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse p-0">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+
+									+ MENU EFFECTS
+										.nav-animate-fadeIn
+										.nav-animate-fadeInUp
+										.nav-animate-bounceIn
+										.nav-animate-bounceInUp
+										.nav-animate-flipInX
+										.nav-animate-flipInY
+										.nav-animate-zoomIn
+										.nav-animate-slideInUp
+
+										.nav-hover-animate 	= animate text on hover
+
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-animate-fadeIn">
+									<li class="dropdown active"><!-- HOME -->
+										<a class="dropdown-toggle" href="index.html">
+											Home
+										</a>
+										
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a href="#">
+											Contact
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+
+
+
+			<!-- -->
+			<section class="m-0 h" 
+				data-background-delay="3500" 
+				data-background-fade="1000" 
+				data-background="
+					demo_files/images/packs/realestate/cover/christian-joudrey-98245-min.jpg
+					,demo_files/images/packs/realestate/gallery/tyler-hendy-139071-min.jpg
+					,demo_files/images/packs/realestate/gallery/gus-ruballo-128864-min.jpg
+			">
+
+
+						
+						<div class="container z-index-1">
+
+
+							<div class="row">
+
+								<!-- RIGHT COLUMN -->
+								<div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 text-md-right text-sm-center text-xs-center">
+
+									<h1 class="m-0 fs-40 fw-400 text-white wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">We are updating our website</h1>
+									<p class="lead fs-16 fw-300 text-white wow fadeInUp animated" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">WE ARE COMING UP SHORTLY</p>
+
+								</div>
+
+
+								<!-- LEFT COLUMN -->
+								<div class="col-lg-6 col-md-6 col-md-6 col-12 order-lg-1 order-md-1 mb-0">
+
+									
+								</div>
+
+
+							</div>
+
+						</div><!-- /container -->
+
+
+				<span class="overlay dark-6 z-index-0"><!-- dark|light overlay [0 to 9 opacity] --></span>
+
+
+			</section>
+			<!-- / -->
+
+
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+
+
+		<!-- PAGE LEVEL SCRIPT -->
+		<script async src="assets/js/view/pack_realestate.js"></script>
+
+	</body>
+</html>
